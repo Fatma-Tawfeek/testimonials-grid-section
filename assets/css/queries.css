@@ -1,0 +1,73 @@
+/* Mobile (Portrait) */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+    }
+
+    .card {
+        padding: 2.4rem;
+    }
+
+    .card__review {
+        font-size: 1.6rem;
+    }
+
+    .card__text {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+
+    .card__name h2 {
+        font-size: 1.8rem;
+    }
+
+    .card__name p {
+        font-size: 1.6rem;
+    }
+
+    .card__header {
+        gap: 2.4rem;
+    }
+
+    .card__name {
+        gap: 0.8rem;
+    }
+
+    .card--1,
+    .card--4,
+    .card--5 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .card--5 {
+        order: 5;
+    }
+
+    .card--1::before {
+        background-size: 30%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card--1,
+    .card--4,
+    .card--5 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .card--5 {
+        order: 5;
+    }
+
+    .card--1::before {
+        background-size: 20%;
+    }
+}
